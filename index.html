@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamescape | Curated Travel Experiences & Holiday Packages</title>
+  <meta name="description" content="Discover dream destinations and bespoke holiday packages with Dreamescape. Explore Cook Islands, Maldives, Switzerland, Dubai, Bali and Singapore.">
+  
+  <!-- Google Fonts: Manrope, Playfair Display, and Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- HEADER / NAVIGATION BAR                                      -->
+  <!-- ============================================================ -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Dreamescape Home">
+        <img src="dreamescape logo.jpg" alt="Dreamescape Logo" class="brand-logo-img">
+        <span class="brand-logo-text">Dreamescape</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Destinations
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#destinations" class="dropdown-link">Cook Islands</a>
+              <a href="#destinations" class="dropdown-link">Maldives</a>
+              <a href="#destinations" class="dropdown-link">Switzerland</a>
+              <a href="#destinations" class="dropdown-link">Dubai</a>
+              <a href="#destinations" class="dropdown-link">Bali</a>
+              <a href="#destinations" class="dropdown-link">Singapore</a>
+            </div>
+          </li>
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false">
+              Packages
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="dropdown-menu">
+              <a href="#packages" class="dropdown-link">Honeymoon Specials</a>
+              <a href="#packages" class="dropdown-link">Family Vacations</a>
+              <a href="#packages" class="dropdown-link">Adventure Expeditions</a>
+              <a href="#packages" class="dropdown-link">Group Getaways</a>
+              <a href="#packages" class="dropdown-link">Luxury Escapes</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header CTA -->
+      <div class="header-actions">
+        <a href="#enquire" class="btn btn-pill-dark enquire-modal-trigger">
+          Enquire Now
+        </a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- HERO SECTION                                                 -->
+  <!-- ============================================================ -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-wrapper" id="heroBgWrapper">
+      <div class="hero-slide-bg active" style="background-image: url('assets/new/cook islands.avif');" data-index="0" aria-label="Cook Islands"></div>
+      <div class="hero-slide-bg" style="background-image: url('assets/new/maldives attols.jpg');" data-index="1" aria-label="Maldives Atolls"></div>
+      <div class="hero-slide-bg" style="background-image: url('assets/new/swiss alps.webp');" data-index="2" aria-label="Swiss Alps"></div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content-container">
+      <div class="hero-text-block" id="heroTextBlock">
+        <span class="hero-eyebrow" id="heroEyebrow">EXPLORE &bull; DREAM &bull; TRAVEL</span>
+        <h1 class="hero-title" id="heroTitle">Cook Islands</h1>
+        <p class="hero-description" id="heroDesc">
+          360&deg; Virtual Tour. An unspoiled paradise, complete with<br>
+          white sand beaches, blue lagoons, and lush green mountains.
+        </p>
+        <div class="hero-cta-wrapper">
+          <a href="#packages" class="btn btn-pill-white" id="heroCtaBtn">
+            <span id="heroCtaText">Explore Our Little Paradise</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Footer Controls (Watch Video) -->
+      <div class="hero-controls-row">
+        <!-- Watch Video Trigger -->
+        <button class="watch-video-btn" id="watchVideoBtn" aria-label="Watch destination video">
+          <span class="play-icon-circle">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <polygon points="6 3 20 12 6 21 6 3"></polygon>
+            </svg>
+          </span>
+          <span class="watch-video-text">Watch Video</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FLOATING SEARCH / FILTER BAR                                 -->
+  <!-- ============================================================ -->
+  <section class="search-filter-section" id="searchFilterSection">
+    <div class="search-filter-container">
+      <form class="search-filter-card" id="searchFilterForm">
+        
+        <!-- Filter Item 1: Destination -->
+        <div class="filter-col" data-filter="destination">
+          <div class="filter-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="filter-details">
+            <span class="filter-label">Destination</span>
+            <div class="filter-input-wrap">
+              <span class="filter-value" id="valDestination">Where do you want to go?</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <select class="filter-native-select" id="selectDestination" aria-label="Select Destination">
+              <option value="">Where do you want to go?</option>
+              <option value="Cook Islands">Cook Islands</option>
+              <option value="Bali">Bali, Indonesia</option>
+              <option value="Switzerland">Switzerland, Europe</option>
+              <option value="Maldives">Maldives, Indian Ocean</option>
+              <option value="Dubai">Dubai, U.A.E</option>
+              <option value="Singapore">Singapore, Asia</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-separator"></div>
+
+        <!-- Filter Item 2: Travel Type -->
+        <div class="filter-col" data-filter="type">
+          <div class="filter-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div class="filter-details">
+            <span class="filter-label">Travel Type</span>
+            <div class="filter-input-wrap">
+              <span class="filter-value" id="valTravelType">Any Type</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <select class="filter-native-select" id="selectTravelType" aria-label="Select Travel Type">
+              <option value="">Any Type</option>
+              <option value="Honeymoon">Honeymoon & Romantic</option>
+              <option value="Family">Family Vacation</option>
+              <option value="Adventure">Adventure & Trekking</option>
+              <option value="Group">Group & Friends</option>
+              <option value="Luxury">Luxury & Wellness</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-separator"></div>
+
+        <!-- Filter Item 3: Duration -->
+        <div class="filter-col" data-filter="duration">
+          <div class="filter-icon">
+            <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="filter-details">
+            <span class="filter-label">Duration</span>
+            <div class="filter-input-wrap">
+              <span class="filter-value" id="valDuration">Any Duration</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <select class="filter-native-select" id="selectDuration" aria-label="Select Duration">
+              <option value="">Any Duration</option>
+              <option value="3-5 Days">3 - 5 Days</option>
+              <option value="5-7 Days">5 - 7 Days</option>
+              <option value="7-10 Days">7 - 10 Days</option>
+              <option value="10+ Days">10+ Days</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-separator"></div>
+
+        <!-- Filter Item 4: Budget -->
+        <div class="filter-col" data-filter="budget">
+          <div class="filter-icon currency-icon-wrap">
+            <span class="currency-symbol">&#8377;</span>
+          </div>
+          <div class="filter-details">
+            <span class="filter-label">Budget</span>
+            <div class="filter-input-wrap">
+              <span class="filter-value" id="valBudget">Any Budget</span>
+              <svg class="chevron-icon" viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </div>
+            <select class="filter-native-select" id="selectBudget" aria-label="Select Budget">
+              <option value="">Any Budget</option>
+              <option value="Under ₹50,000">Under &#8377;50,000</option>
+              <option value="₹50,000 - ₹1,00,000">&#8377;50,000 - &#8377;1,00,000</option>
+              <option value="₹1,00,000 - ₹2,00,000">&#8377;1,00,000 - &#8377;2,00,000</option>
+              <option value="₹2,00,000+">&#8377;2,00,000+</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Search Submit Button -->
+        <button type="submit" class="btn btn-search-pill" aria-label="Search travel packages">
+          <svg class="search-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Search</span>
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- POPULAR DESTINATIONS SECTION                                 -->
+  <!-- ============================================================ -->
+  <section class="section popular-destinations" id="destinations">
+    <div class="section-container">
+      
+      <!-- Section Header -->
+      <div class="section-header-row">
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">POPULAR DESTINATIONS <span class="eyebrow-line"></span></span>
+          <h2 class="section-title">Discover Dream Destinations</h2>
+        </div>
+        <a href="#destinations" class="section-link">
+          View All Destinations
+        </a>
+      </div>
+
+      <!-- 5-Column Destination Grid -->
+      <div class="destination-grid">
+        
+        <!-- Card 1: Bali -->
+        <div class="destination-card" tabindex="0">
+          <div class="dest-card-media">
+            <img src="assets/dest-bali.jpg" alt="Bali, Indonesia" class="dest-card-img" loading="lazy">
+            <div class="dest-card-gradient"></div>
+          </div>
+          <div class="dest-card-content">
+            <div class="dest-card-meta">
+              <h3 class="dest-name">Bali</h3>
+              <span class="dest-region">Indonesia</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Switzerland -->
+        <div class="destination-card" tabindex="0">
+          <div class="dest-card-media">
+            <img src="assets/dest-switzerland.jpg" alt="Switzerland, Europe" class="dest-card-img" loading="lazy">
+            <div class="dest-card-gradient"></div>
+          </div>
+          <div class="dest-card-content">
+            <div class="dest-card-meta">
+              <h3 class="dest-name">Switzerland</h3>
+              <span class="dest-region">Europe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Maldives -->
+        <div class="destination-card" tabindex="0">
+          <div class="dest-card-media">
+            <img src="assets/dest-maldives.jpg" alt="Maldives, Indian Ocean" class="dest-card-img" loading="lazy">
+            <div class="dest-card-gradient"></div>
+          </div>
+          <div class="dest-card-content">
+            <div class="dest-card-meta">
+              <h3 class="dest-name">Maldives</h3>
+              <span class="dest-region">Indian Ocean</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Dubai -->
+        <div class="destination-card" tabindex="0">
+          <div class="dest-card-media">
+            <img src="assets/dest-dubai.jpg" alt="Dubai, U.A.E" class="dest-card-img" loading="lazy">
+            <div class="dest-card-gradient"></div>
+          </div>
+          <div class="dest-card-content">
+            <div class="dest-card-meta">
+              <h3 class="dest-name">Dubai</h3>
+              <span class="dest-region">U.A.E</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Singapore -->
+        <div class="destination-card" tabindex="0">
+          <div class="dest-card-media">
+            <img src="assets/dest-singapore.jpg" alt="Singapore, Asia" class="dest-card-img" loading="lazy">
+            <div class="dest-card-gradient"></div>
+          </div>
+          <div class="dest-card-content">
+            <div class="dest-card-meta">
+              <h3 class="dest-name">Singapore</h3>
+              <span class="dest-region">Asia</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FEATURED PACKAGES SECTION                                    -->
+  <!-- ============================================================ -->
+  <section class="section featured-packages" id="packages">
+    <div class="section-container">
+
+      <!-- Section Header -->
+      <div class="section-header-row">
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">FEATURED PACKAGES <span class="eyebrow-line"></span></span>
+          <h2 class="section-title">Curated Travel Experiences</h2>
+        </div>
+        <a href="#packages" class="section-link">
+          View All Packages
+        </a>
+      </div>
+
+      <!-- 4-Column Packages Grid -->
+      <div class="packages-grid">
+
+        <!-- Package Card 1: Maldives Getaway -->
+        <div class="package-card" data-package="Maldives Getaway">
+          <div class="pkg-media-wrap">
+            <span class="pkg-badge">Honeymoon</span>
+            <img src="assets/pkg-maldives.jpg" alt="Maldives Getaway overwater villas" class="pkg-img" loading="lazy">
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-title">Maldives Getaway</h3>
+            <div class="pkg-meta-row">
+              <span class="pkg-location">
+                <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Maldives
+              </span>
+              <span class="pkg-meta-divider">|</span>
+              <span class="pkg-duration">5N / 6D</span>
+            </div>
+            <div class="pkg-footer-row">
+              <div class="pkg-price-wrap">
+                <span class="pkg-price">&#8377; 89,999</span>
+              </div>
+              <button class="btn btn-outline-pill pkg-details-trigger" data-pkg-title="Maldives Getaway" data-pkg-price="₹ 89,999" data-pkg-duration="5N / 6D" data-pkg-loc="Maldives">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package Card 2: Singapore Explorer -->
+        <div class="package-card" data-package="Singapore Explorer">
+          <div class="pkg-media-wrap">
+            <span class="pkg-badge">Family</span>
+            <img src="assets/pkg-singapore.jpg" alt="Singapore Explorer Merlion and Skyline" class="pkg-img" loading="lazy">
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-title">Singapore Explorer</h3>
+            <div class="pkg-meta-row">
+              <span class="pkg-location">
+                <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Singapore
+              </span>
+              <span class="pkg-meta-divider">|</span>
+              <span class="pkg-duration">5N / 6D</span>
+            </div>
+            <div class="pkg-footer-row">
+              <div class="pkg-price-wrap">
+                <span class="pkg-price">&#8377; 69,999</span>
+              </div>
+              <button class="btn btn-outline-pill pkg-details-trigger" data-pkg-title="Singapore Explorer" data-pkg-price="₹ 69,999" data-pkg-duration="5N / 6D" data-pkg-loc="Singapore">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package Card 3: Swiss Adventure -->
+        <div class="package-card" data-package="Swiss Adventure">
+          <div class="pkg-media-wrap">
+            <span class="pkg-badge">Adventure</span>
+            <img src="assets/pkg-swiss.jpg" alt="Swiss Adventure Alpine Mountain Landscape" class="pkg-img" loading="lazy">
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-title">Swiss Adventure</h3>
+            <div class="pkg-meta-row">
+              <span class="pkg-location">
+                <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Switzerland
+              </span>
+              <span class="pkg-meta-divider">|</span>
+              <span class="pkg-duration">6N / 7D</span>
+            </div>
+            <div class="pkg-footer-row">
+              <div class="pkg-price-wrap">
+                <span class="pkg-price">&#8377; 1,49,999</span>
+              </div>
+              <button class="btn btn-outline-pill pkg-details-trigger" data-pkg-title="Swiss Adventure" data-pkg-price="₹ 1,49,999" data-pkg-duration="6N / 7D" data-pkg-loc="Switzerland">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Package Card 4: Bali Bliss -->
+        <div class="package-card" data-package="Bali Bliss">
+          <div class="pkg-media-wrap">
+            <span class="pkg-badge">Group</span>
+            <img src="assets/pkg-bali.jpg" alt="Bali Bliss tropical limestone islands and lagoon" class="pkg-img" loading="lazy">
+          </div>
+          <div class="pkg-body">
+            <h3 class="pkg-title">Bali Bliss</h3>
+            <div class="pkg-meta-row">
+              <span class="pkg-location">
+                <svg viewBox="0 0 24 24" width="13" height="13" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Indonesia
+              </span>
+              <span class="pkg-meta-divider">|</span>
+              <span class="pkg-duration">6N / 7D</span>
+            </div>
+            <div class="pkg-footer-row">
+              <div class="pkg-price-wrap">
+                <span class="pkg-price">&#8377; 74,999</span>
+              </div>
+              <button class="btn btn-outline-pill pkg-details-trigger" data-pkg-title="Bali Bliss" data-pkg-price="₹ 74,999" data-pkg-duration="6N / 7D" data-pkg-loc="Indonesia">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- TRUST / VALUE PROPOSITIONS BAR                               -->
+  <!-- ============================================================ -->
+  <section class="trust-features-section" id="about">
+    <div class="section-container">
+      <div class="trust-bar-card">
+        
+        <!-- Trust Feature 1 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </div>
+          <span class="trust-text">Trusted by 10,000+ Travellers</span>
+        </div>
+
+        <div class="trust-separator"></div>
+
+        <!-- Trust Feature 2 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <polyline points="9 12 11 14 15 10"></polyline>
+            </svg>
+          </div>
+          <span class="trust-text">Secure Payment Gateway</span>
+        </div>
+
+        <div class="trust-separator"></div>
+
+        <!-- Trust Feature 3 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+              <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+            </svg>
+          </div>
+          <span class="trust-text">24/7 Travel Support</span>
+        </div>
+
+        <div class="trust-separator"></div>
+
+        <!-- Trust Feature 4 -->
+        <div class="trust-item">
+          <div class="trust-icon-box">
+            <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <span class="trust-text">Best Price Guarantee</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- TESTIMONIALS SECTION                                         -->
+  <!-- ============================================================ -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="section-container">
+      
+      <!-- Section Header -->
+      <div class="section-header-row">
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">TESTIMONIALS <span class="eyebrow-line"></span></span>
+          <h2 class="section-title">What Our Travellers Say</h2>
+        </div>
+        <div class="testimonial-controls">
+          <button class="carousel-btn prev-btn" id="testimonialPrev" aria-label="Previous testimonial">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </button>
+          <button class="carousel-btn next-btn" id="testimonialNext" aria-label="Next testimonial">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Testimonial Slider / Card -->
+      <div class="testimonial-slider-container">
+        <div class="testimonial-track" id="testimonialTrack">
+          
+          <!-- Slide 1 (Active) -->
+          <div class="testimonial-slide active">
+            <div class="testimonial-card">
+              <div class="testimonial-author">
+                <img src="assets/avatar-anjana.jpg" alt="Anjana Menon" class="author-avatar">
+                <div class="author-meta">
+                  <h4 class="author-name">Anjana Menon</h4>
+                  <span class="author-location">Kochi</span>
+                </div>
+              </div>
+
+              <div class="testimonial-quote-wrap">
+                <blockquote class="testimonial-quote">
+                  &ldquo;Dreamescape made our Maldives trip absolutely unforgettable. From planning to execution, everything was perfect!&rdquo;
+                </blockquote>
+              </div>
+
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-author">
+                <div class="author-avatar-placeholder">RK</div>
+                <div class="author-meta">
+                  <h4 class="author-name">Rahul Kapoor</h4>
+                  <span class="author-location">Mumbai</span>
+                </div>
+              </div>
+
+              <div class="testimonial-quote-wrap">
+                <blockquote class="testimonial-quote">
+                  &ldquo;Our Swiss family adventure with Dreamescape surpassed every expectation. Outstanding attention to detail and 24/7 care.&rdquo;
+                </blockquote>
+              </div>
+
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-author">
+                <div class="author-avatar-placeholder">SN</div>
+                <div class="author-meta">
+                  <h4 class="author-name">Sneha Nair</h4>
+                  <span class="author-location">Bengaluru</span>
+                </div>
+              </div>
+
+              <div class="testimonial-quote-wrap">
+                <blockquote class="testimonial-quote">
+                  &ldquo;Booking our Bali getaway with Dreamescape was completely seamless. Best travel agency experience we've ever had!&rdquo;
+                </blockquote>
+              </div>
+
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Pagination Dots -->
+        <div class="testimonial-dots" id="testimonialDots" aria-label="Testimonial navigation dots">
+          <button class="dot-btn" data-slide="0" aria-label="Testimonial 1"></button>
+          <button class="dot-btn active" data-slide="1" aria-label="Testimonial 2"></button>
+          <button class="dot-btn" data-slide="2" aria-label="Testimonial 3"></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- STAY INSPIRED NEWSLETTER BANNER                              -->
+  <!-- ============================================================ -->
+  <section class="newsletter-section">
+    <div class="section-container">
+      <div class="newsletter-banner-card">
+        <div class="newsletter-bg-wrap">
+          <img src="assets/newsletter-banner.jpg" alt="Tropical sunset silhouette" class="newsletter-bg-img">
+          <div class="newsletter-overlay"></div>
+        </div>
+        
+        <div class="newsletter-inner">
+          <div class="newsletter-text-col">
+            <span class="newsletter-eyebrow">STAY INSPIRED <span class="eyebrow-line"></span></span>
+            <h3 class="newsletter-title">Get the Best Travel Deals</h3>
+            <p class="newsletter-subtitle">Subscribe to our newsletter and never miss an update.</p>
+          </div>
+
+          <div class="newsletter-form-col">
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" class="newsletter-input" placeholder="Your Email Address" required aria-label="Email address for newsletter">
+              <button type="submit" class="btn btn-pill-dark newsletter-submit-btn">
+                <span>Subscribe</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER                                                       -->
+  <!-- ============================================================ -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      <div class="footer-columns-row">
+        
+        <!-- Column 1: Brand & Tagline -->
+        <div class="footer-col brand-col">
+          <a href="#" class="footer-brand-logo" aria-label="Dreamescape Home">
+            <div class="footer-logo-badge">
+              <img src="dreamescape logo.jpg" alt="Dreamescape Logo" class="footer-logo-img">
+            </div>
+            <div class="footer-brand-text">
+              <span class="footer-brand-title">Dreamescape</span>
+            </div>
+          </a>
+          <p class="footer-tagline">Explore Beyond Boundaries</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col nav-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Support -->
+        <div class="footer-col nav-col" id="faq">
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Cancellation Policy</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Follow Us -->
+        <div class="footer-col social-col">
+          <h4 class="footer-col-title">Follow Us</h4>
+          <div class="footer-social-icons">
+            <!-- Instagram -->
+            <a href="#" class="social-icon-btn" aria-label="Follow Dreamescape on Instagram">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" class="social-icon-btn" aria-label="Follow Dreamescape on Facebook">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <!-- YouTube -->
+            <a href="#" class="social-icon-btn" aria-label="Follow Dreamescape on YouTube">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <!-- Telegram / Channel -->
+            <a href="#" class="social-icon-btn" aria-label="Join Dreamescape on Telegram">
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 5: Plan Next Trip CTA -->
+        <div class="footer-col cta-col" id="enquire">
+          <h4 class="footer-col-title">Let's Plan Your Next Trip</h4>
+          <a href="#enquire" class="btn btn-pill-outline-light enquire-modal-trigger">
+            Enquire Now
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright Sub-Footer -->
+      <div class="footer-bottom-row">
+        <p class="copyright-text">&copy; 2026 Dreamescape. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MODALS & TOAST NOTIFICATIONS                                 -->
+  <!-- ============================================================ -->
+
+  <!-- Video Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true" aria-label="Destination Video Modal">
+    <div class="modal-card video-modal-card">
+      <button class="modal-close-btn" id="videoModalClose" aria-label="Close video modal">&times;</button>
+      <div class="modal-video-container">
+        <iframe id="videoIframe" width="100%" height="100%" src="" title="Cook Islands 360 Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer-caption">
+        <h4>Cook Islands &bull; 360&deg; Experience</h4>
+        <p>Immerse yourself in Rarotonga & Aitutaki's tranquil blue lagoons.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Enquiry / Package Details Modal -->
+  <div class="modal-backdrop" id="enquiryModal" role="dialog" aria-modal="true" aria-label="Plan Your Trip Modal">
+    <div class="modal-card enquiry-modal-card">
+      <button class="modal-close-btn" id="enquiryModalClose" aria-label="Close enquiry modal">&times;</button>
+      <div class="enquiry-modal-header">
+        <span class="modal-badge" id="modalBadge">Bespoke Travel</span>
+        <h3 class="modal-title" id="modalTitle">Enquire About Your Dreamescape</h3>
+        <p class="modal-subtitle" id="modalSubtitle">Tell us your travel plans and our destination specialists will craft your perfect itinerary.</p>
+      </div>
+      <form class="enquiry-form" id="enquiryForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="eqName">Full Name</label>
+            <input type="text" id="eqName" class="form-input" placeholder="e.g. Rahul Sharma" required>
+          </div>
+          <div class="form-group">
+            <label for="eqEmail">Email Address</label>
+            <input type="email" id="eqEmail" class="form-input" placeholder="rahul@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="eqPhone">Phone Number</label>
+            <input type="tel" id="eqPhone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group">
+            <label for="eqDestination">Selected Destination</label>
+            <input type="text" id="eqDestination" class="form-input" value="Cook Islands" placeholder="e.g. Cook Islands, Maldives" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="eqTravellers">Number of Travellers</label>
+            <select id="eqTravellers" class="form-select">
+              <option value="2 Adults (Couple)">2 Adults (Couple)</option>
+              <option value="Family (2 Adults + Kids)">Family (2 Adults + Kids)</option>
+              <option value="Solo Traveller">Solo Traveller</option>
+              <option value="Group (4+ People)">Group (4+ People)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="eqMonth">Expected Travel Month</label>
+            <select id="eqMonth" class="form-select">
+              <option value="Next 30 Days">Next 30 Days</option>
+              <option value="1 - 3 Months">1 - 3 Months</option>
+              <option value="3 - 6 Months">3 - 6 Months</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="eqNotes">Special Requests / Preferences</label>
+          <textarea id="eqNotes" rows="3" class="form-textarea" placeholder="Tell us about special honeymoon surprises, room views, dietary needs, or activity preferences..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-pill-dark btn-submit-enquiry">
+          <span>Submit Enquiry</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <div class="toast-icon">&#10003;</div>
+    <div class="toast-text" id="toastText">Your request has been submitted!</div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
+
