@@ -1763,34 +1763,11 @@ ul {
 /* ========================================================== */
 /* FOOTER ADDRESS, PHONE & LEGAL INFO                         */
 /* ========================================================== */
-.footer-legal-info {
-  margin-top: 14px;
-  font-family: var(--font-body);
-  font-size: 12.5px;
-  color: var(--text-subtle);
-  line-height: 1.6;
-}
-.footer-legal-item {
-  margin: 0 0 4px;
-}
-.footer-legal-item .legal-label {
-  color: #94a3b8;
-  font-size: 11.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: inline-block;
-  margin-right: 4px;
-}
-.footer-legal-item strong {
-  color: #f1f5f9;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
 .footer-address {
   font-family: var(--font-body);
   font-size: 12.5px;
   color: var(--text-subtle);
-  margin-top: 12px;
+  margin-top: 14px;
   font-style: normal;
   line-height: 1.8;
   display: flex;
@@ -1798,8 +1775,30 @@ ul {
 }
 .footer-addr-icon {
   flex-shrink: 0;
-  margin-top: 3px;
+  margin-top: 4px;
   color: #64748b;
+}
+.footer-addr-text {
+  line-height: 1.75;
+}
+.footer-entity-name {
+  color: #f1f5f9;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.footer-gst-line {
+  display: inline-block;
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--text-subtle);
+}
+.footer-gst-line strong {
+  color: #e2e8f0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 .footer-phone {
   font-family: var(--font-body);
