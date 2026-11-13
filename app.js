@@ -339,6 +339,78 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
+  // ==========================================================
+  // 10. LEGAL MODAL (TERMS & PRIVACY POLICY)
+  // ==========================================================
+  const legalModal = document.getElementById('legalModal');
+  const legalModalClose = document.getElementById('legalModalClose');
+  const legalModalCloseBtn = document.getElementById('legalModalCloseBtn');
+  const footerTermsLink = document.getElementById('footerTermsLink');
+  const footerPrivacyLink = document.getElementById('footerPrivacyLink');
+  const footerCancellationLink = document.getElementById('footerCancellationLink');
+  const tabBtnTerms = document.getElementById('tabBtnTerms');
+  const tabBtnPrivacy = document.getElementById('tabBtnPrivacy');
+  const panelTerms = document.getElementById('panelTerms');
+  const panelPrivacy = document.getElementById('panelPrivacy');
+
+  function openLegalModal(tab) {
+    if (!legalModal) return;
+    if (tab === 'privacy') {
+      tabBtnPrivacy?.classList.add('active');
+      tabBtnTerms?.classList.remove('active');
+      panelPrivacy?.classList.add('active');
+      panelTerms?.classList.remove('active');
+    } else {
+      tabBtnTerms?.classList.add('active');
+      tabBtnPrivacy?.classList.remove('active');
+      panelTerms?.classList.add('active');
+      panelPrivacy?.classList.remove('active');
+    }
+    legalModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLegalModal() {
+    if (!legalModal) return;
+    legalModal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  if (footerTermsLink) {
+    footerTermsLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLegalModal('terms');
+    });
+  }
+
+  if (footerPrivacyLink) {
+    footerPrivacyLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLegalModal('privacy');
+    });
+  }
+
+  if (footerCancellationLink) {
+    footerCancellationLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      openLegalModal('terms');
+    });
+  }
+
+  tabBtnTerms?.addEventListener('click', () => openLegalModal('terms'));
+  tabBtnPrivacy?.addEventListener('click', () => openLegalModal('privacy'));
+
+  if (legalModalClose) legalModalClose.addEventListener('click', closeLegalModal);
+  if (legalModalCloseBtn) legalModalCloseBtn.addEventListener('click', closeLegalModal);
+
+  if (legalModal) {
+    legalModal.addEventListener('click', (e) => {
+      if (e.target === legalModal) {
+        closeLegalModal();
+      }
+    });
+  }
+
   // Escape key closes modals
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -348,6 +420,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       if (enquiryModal && enquiryModal.classList.contains('active')) {
         enquiryModal.classList.remove('active');
+      }
+      if (legalModal && legalModal.classList.contains('active')) {
+        closeLegalModal();
       }
     }
   });

@@ -761,9 +761,9 @@
           <h4 class="footer-col-title">Support</h4>
           <ul class="footer-links-list">
             <li><a href="#faq">FAQ</a></li>
-            <li><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cancellation Policy</a></li>
+            <li><a href="#terms" id="footerTermsLink">Terms &amp; Conditions</a></li>
+            <li><a href="#privacy" id="footerPrivacyLink">Privacy Policy</a></li>
+            <li><a href="#terms" id="footerCancellationLink">Cancellation Policy</a></li>
           </ul>
         </div>
 
@@ -895,6 +895,89 @@
           <span>Submit Enquiry</span>
         </button>
       </form>
+    </div>
+  </div>
+
+  <!-- Terms & Conditions / Privacy Policy Modal -->
+  <div class="modal-backdrop" id="legalModal" role="dialog" aria-modal="true" aria-label="Terms and Privacy Policy">
+    <div class="modal-card legal-modal-card">
+      <button class="modal-close-btn" id="legalModalClose" aria-label="Close dialog">&times;</button>
+      
+      <div class="legal-modal-header">
+        <div class="legal-modal-brand">
+          <img src="dreamescape logo.jpg" alt="Dreamescape Logo" class="legal-logo-img">
+          <div>
+            <h3 class="legal-brand-title">Dreamescape</h3>
+            <span class="legal-brand-sub">DREAMESCAPE HOLIDAYS LLP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="legal-tabs-bar">
+        <button class="legal-tab-btn active" id="tabBtnTerms" data-tab="terms">Terms &amp; Conditions</button>
+        <button class="legal-tab-btn" id="tabBtnPrivacy" data-tab="privacy">Privacy Policy</button>
+      </div>
+
+      <div class="legal-modal-body">
+        <!-- Terms & Conditions Tab Content -->
+        <div class="legal-tab-panel active" id="panelTerms">
+          <h4>Terms &amp; Conditions</h4>
+          <p class="legal-meta">Last Updated: November 2026</p>
+          <p>Welcome to <strong>Dreamescape</strong> (operated by <strong>DREAMESCAPE HOLIDAYS LLP</strong>, GSTIN: <strong>32AAYFD2792C1ZB</strong>). By accessing our website or booking travel services with us, you agree to comply with and be bound by the following terms and conditions.</p>
+
+          <h5>1. Services &amp; Quotations</h5>
+          <p>Dreamescape offers bespoke travel planning, curated holiday packages, flight and luxury resort bookings, and specialized experiential itineraries. All quotes are subject to seasonal availability, currency exchange rates, and final confirmation by partner suppliers until a formal booking is executed.</p>
+
+          <h5>2. Booking Confirmation &amp; Payments</h5>
+          <p>A booking is considered confirmed only upon receipt of the stipulated advance payment and written confirmation voucher issued by Dreamescape. The balance must be cleared prior to departure as detailed in your itinerary confirmation.</p>
+
+          <h5>3. Cancellations &amp; Refund Policy</h5>
+          <p>Cancellation requests must be submitted in writing. Cancellation fees are subject to hotel, airline, and local operator policies. Any eligible refunds will be processed back to the original payment method within 10&ndash;14 business days.</p>
+
+          <h5>4. Travel Documents, Visas &amp; Health</h5>
+          <p>Travellers are solely responsible for possessing valid passports (minimum 6 months validity from date of travel), appropriate entry visas, transit permits, and requisite health/vaccination certifications for their destinations.</p>
+
+          <h5>5. Limitation of Liability</h5>
+          <p>Dreamescape acts as an agent and facilitator for airlines, hotels, transport providers, and tour operators. While we partner only with trusted and reputed vendors, Dreamescape is not liable for delays, cancellations, baggage loss, injuries, or unforeseen circumstances (force majeure) beyond our direct operational control.</p>
+
+          <h5>6. Governing Law &amp; Jurisdiction</h5>
+          <p>These terms are governed by the laws of India. Any disputes arising shall be subject to the exclusive jurisdiction of the competent courts in Malappuram, Kerala, India.</p>
+        </div>
+
+        <!-- Privacy Policy Tab Content -->
+        <div class="legal-tab-panel" id="panelPrivacy">
+          <h4>Privacy Policy</h4>
+          <p class="legal-meta">Last Updated: November 2026</p>
+          <p>At <strong>Dreamescape</strong>, we respect your privacy and are committed to protecting all personal information shared with us through our website and booking platforms.</p>
+
+          <h5>1. Information We Collect</h5>
+          <p>We may collect personal details including your name, email address, phone number, residential address, travel preferences, passport details, and payment information when you enquire or confirm reservations with us.</p>
+
+          <h5>2. How We Use Your Information</h5>
+          <p>Your information is used strictly to:
+            <br>&bull; Process hotel reservations, airline tickets, and itinerary bookings.
+            <br>&bull; Provide tailored holiday recommendations, trip updates, and customer support.
+            <br>&bull; Comply with regulatory requirements and GST invoicing (GSTIN: 32AAYFD2792C1ZB).
+          </p>
+
+          <h5>3. Data Protection &amp; Confidentiality</h5>
+          <p>We do not sell, rent, or trade your personal data to any third party for commercial marketing. Information is shared only with certified travel suppliers directly involved in executing your itinerary. We implement strict digital and administrative safeguards to ensure data security.</p>
+
+          <h5>4. Cookies &amp; Website Analytics</h5>
+          <p>Our website uses basic analytical cookies to optimize performance and deliver an improved user experience. You can choose to disable cookies in your web browser without hindering normal site navigation.</p>
+
+          <h5>5. Contact Us</h5>
+          <p>For any questions regarding our Privacy Policy or to request modification of your personal records, please contact:
+            <br><strong>DREAMESCAPE HOLIDAYS LLP</strong>
+            <br>1st Floor, 14/13E, Ayyaya Road Jn., Vayilathur, Ponmundam, Malappuram, Kerala &ndash; 676106
+            <br>Phone: +91 94477 01885
+          </p>
+        </div>
+      </div>
+
+      <div class="legal-modal-footer">
+        <button class="btn btn-pill-dark legal-close-btn" id="legalModalCloseBtn">Close</button>
+      </div>
     </div>
   </div>
 
